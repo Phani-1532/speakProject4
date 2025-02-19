@@ -43,7 +43,8 @@ body{
 }
 
 .container input::placeholder{
-    color: #96cdee;
+    color: #0ee790;
+    font-weight: bold;
     font-size: 15px;
 }
 
@@ -51,6 +52,7 @@ body{
     color: #036f52;
     transition: 0.3s;
     transform: translateY(-13px);
+
 }
 
 .container input:focus{
