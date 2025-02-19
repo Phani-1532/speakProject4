@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #f1f1f1;
+    background: linear-gradient(90deg, #4dc4a6, #08715d);;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body{
 
 .container{
     width: 500px;
-    background-color: #fff;
+    background:linear-gradient(90deg, #2edfb8, #57e9a0);
     height: 400px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(14, 212, 238, 0.1);
@@ -28,14 +28,29 @@ body{
 .container h1{
     color: #333;
     margin-bottom: 20px;
+    background: linear-gradient(90deg, #115c49, #08715d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container input{
     width: 300px;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #14f1b9;
     border-radius: 5px;
+}
+
+.container input::placeholder{
+    color: #96cdee;
+    font-size: 15px;
+}
+
+.container input:focus::placeholder{
+    color: #036f52;
+    transition: 0.3s;
+    transform: translateY(-13px);
 }
 
 .container input:focus{
@@ -47,8 +62,9 @@ body{
 
 .container button{
     padding: 20px;
-    background-color: #14f1b9;
+    background-color: #6bb09f;
     color: #fff;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
